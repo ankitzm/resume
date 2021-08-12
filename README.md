@@ -1,3 +1,3 @@
 # resume
 
-A repository to hot my resume on ankitzm.co/resume
+A repository to host my resume on https://ankitzm.co/resume
