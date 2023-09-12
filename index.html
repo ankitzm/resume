@@ -13,12 +13,22 @@
 <body>
   <center>
         <h3>Welcome here. Checkout my resume below 👇 </h3> <br><br>
-        <iframe src=
-                "https://ankitzm.github.io/resume/Ankit_Singh.pdf"
-                width="1500"
-                height="1000">
-            </iframe>
+        <iframe src="./Ankit_Singh.pdf" id="pdf"></iframe>
     </center>
   
   </body>
+
+  <script>
+    let pfdElement = document.getElementById("pdf")
+    let pdfWidth = screen.width - 60
+    let pdfHeight = pdfWidth * 1.6
+
+    if(screen.width >= 0 && screen.width <= 425) {
+      pfdElement.setAttribute("width", "300")
+      pfdElement.setAttribute("height", "480")
+    } else {
+      pfdElement.setAttribute("width", pdfWidth)
+      pfdElement.setAttribute("height", pdfHeight)
+    }
+  </script>
 </html>
